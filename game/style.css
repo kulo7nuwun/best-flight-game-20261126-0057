@@ -1,0 +1,32 @@
+/* Sky Courier — page chrome around the game canvas. Dark, quiet, out of
+   the way: the game itself is the picture. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: #0b1220;
+  color: #dfeeff;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stage {
+  width: min(1280px, 100vw);
+  padding: 12px;
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  background: #1c4e9e;
+  cursor: pointer;
+}
+.help {
+  text-align: center;
+  font-size: 13px;
+  color: #9fc3e8;
+  margin: 10px 0 0;
+}
